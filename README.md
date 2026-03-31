@@ -1,2 +1,2 @@
 # Basic-Landing-Page
-Creating a Landing page following the Odin Project guidelines
+Created a Landing page following the Odin Project guidelines with some stylistic liberties.

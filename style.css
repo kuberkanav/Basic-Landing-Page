@@ -1,13 +1,17 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .header ul {
@@ -25,12 +29,17 @@ li {
 .hero img {
     width: 900px;
     height: 400px;
+    box-shadow: 8px 8px 16px 2px rgba(0, 0, 0, 0.5)
 }
 
 .info img {
-    width: 150px;
-    height: 150px;
-    padding: 10% 0 10%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 8%;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.55);
+    border: 2px double #ffffffbb;
 }
 
 button {
@@ -56,11 +65,12 @@ a {
     color: #F9FAF8;
     background-color: orangered;
     border: 4px double white;
-    padding: 8px 16px;
+    padding: 3px 25px;
+    font-variant: small-caps;
 }
 
 .header, .footer {
-    background-color: #1F2937;
+    background-color: #000000;
     color: white;
     height: 72px;
     display: flex;
@@ -75,7 +85,6 @@ a {
 
 .hero {
     flex: 1;
-    background-color: #1F2937;
     color: #F9FAF8;
     padding: 2% 14% 5%;
     display: flex;
@@ -88,20 +97,20 @@ a {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 48px 100px 48px 0;
+    padding: 36px 100px 48px 0;
     max-height: 400px;
 }
 
 .main-text {
     font-size: 48px;
     font-weight: 900;
-    padding-bottom: 24px;
+    padding-bottom: 12px;
     color: #F9FAF8;
 }
 
 .subtext {
     font-size: 18px;
-    padding-bottom: 24px;
+    padding-bottom: 48px;
     color: #E5E7EB;
 }
 
@@ -109,12 +118,13 @@ a {
     flex: 1;
     padding: 3% 14%;
     text-align: center;
+    color: #ffffff;
+    background-color: #0000009b;
 }
 
 .info-head {
     font-size: 36px;
     font-weight: 900;
-    color: #1F2937;
     padding-bottom: 48px;
 }
 
@@ -175,6 +185,7 @@ a {
 .inner-left p {
     font-size: 20px;
     font-weight: 100;
+    padding-top: 1%;
 }
 
 .footer {
